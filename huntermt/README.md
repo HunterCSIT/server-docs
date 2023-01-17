@@ -13,11 +13,7 @@ Specs
 
 Connecting to the internet using the allocated static IP.
 
-```bash
-sudo apt update && sudo apt -y upgrade
-```
-
-
+### packages
 
 ```bash
 sudo apt update && sudo apt -y upgrade
@@ -58,6 +54,8 @@ sudo apt -y install code
 
 # echo "********** installing ANACONDA **********"
 # CHECK FOR NEWER VERSION AND HASH
+# INSTALL TO /opt/anaconda3
+# DON'T AUTO INIT BASH SESSION
 EXPECTEDHASH="e7ecbccbc197ebd7e1f211c59df2e37bc6959d081f2235d387e08c9026666acd"
 sudo curl https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh --output /tmp/anaconda-install.sh
 sudo chmod 700 /tmp/anaconda-install.sh
@@ -71,3 +69,10 @@ else
 fi
 
 ```
+
+
+### NVIDIA/CUDA Drivers
+
+On desktop: open "Additional drivers" app. Select proprietary NVIDIA driver metapackage that has the highest version
+
+Install CUDA https://developer.nvidia.com/cuda-downloads
