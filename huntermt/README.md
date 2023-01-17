@@ -39,6 +39,9 @@ sudo apt -y install openssh-server
 sudo apt -y install default-jre
 sudo apt -y install default-jdk
 sudo apt -y install libboost-all-dev
+sudo apt-get install gnupg              # Docker prerequisite
+sudo apt-get install ca-certificates    #
+sudo apt-get install lsb-release        #
 
 
 # echo "********** installing Google Chrome **********"
