@@ -31,7 +31,7 @@ else
     if [[ ! "$PY3INTERPRETER" == *"anaconda"* ]]; then
         echo -e "$PREFX You are currently NOT using Anaconda"
         if [ -d "/opt/anaconda3" ]; then
-            echo -e "$PREFX To start Anaconda run command \"${YELLOW}source /opt/anaconda3/bin/activate${NC}\""
+            echo -e "$PREFX To start Anaconda run command: ${YELLOW}source /opt/anaconda3/bin/activate${NC}"
         else
             if [ -z "$CONDAINTERPRETER" ]; then
                 echo -e "$PREFX ${RED}Anaconda not found${NC}"
@@ -42,17 +42,18 @@ else
     else
         echo -e "$PREFX You are using Anaconda"
         echo -e "$PREFX found command: ${YELLOW}conda${NC} ---> $CONDAINTERPRETER"
-        echo -e "$PREFX To exit Anaconda run command \"${YELLOW}conda deactivate${NC}\""
+        echo -e "$PREFX to view conda environment details: ${YELLOW}conda info${NC}"
+        echo -e "$PREFX To exit Anaconda run command: ${YELLOW}conda deactivate${NC}"
     fi
 fi
 
 PIPPATH=$(which pip)
 PIP3PATH=$(which pip3)
 if [ ! -z "$PIPPATH" ]; then
-    echo -e "$PREFX found command ${YELLOW}pip${NC} ---> $PIPPATH"
+    echo -e "$PREFX found command: ${YELLOW}pip${NC} ---> $PIPPATH"
 fi
 if [ ! -z "$PIP3PATH" ]; then
-    echo -e "$PREFX found command ${YELLOW}pip3${NC} ---> $PIP3PATH"
+    echo -e "$PREFX found command: ${YELLOW}pip3${NC} ---> $PIP3PATH"
 fi
 
 echo -e "$PREFX Bye"
