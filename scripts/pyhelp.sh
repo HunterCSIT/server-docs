@@ -4,6 +4,10 @@
 # $ sudo chown root:root /usr/local/bin/pyhelp
 # $ sudo chmod 755 /usr/local/bin/pyhelp
 
+# Add to /etc/bash.bashrc
+# echo -e "\nrun command \e[1;44m\e[1;37m pyhelp \e[0m to view Python environment\n"
+
+
 # https://github.com/HunterCSIT/server-docs/blob/main/scripts/pyhelp.sh
 
 RED='\033[0;31m'
