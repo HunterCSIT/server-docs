@@ -4,6 +4,8 @@
 # $ sudo chown root:root /usr/local/bin/pyhelp
 # $ sudo chmod 755 /usr/local/bin/pyhelp
 
+# https://github.com/HunterCSIT/server-docs/blob/main/scripts/pyhelp.sh
+
 RED='\033[0;31m'
 YELLOW='\e[1;45m\033[0;33m'
 
