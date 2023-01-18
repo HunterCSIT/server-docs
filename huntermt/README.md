@@ -35,6 +35,7 @@ sudo apt -y install git
 sudo apt -y install subversion
 sudo apt -y install python3-dev
 sudo apt -y install python3-pip
+sudo apt -y install python3.10-venv
 sudo apt -y install openssh-server
 sudo apt -y install default-jre
 sudo apt -y install default-jdk
