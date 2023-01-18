@@ -72,12 +72,12 @@ PIP3PATH=$(which pip3)
 if [ ! -z "$PIPPATH" ]; then
     echo -e "\tfound command: ${CMDPX}pip${CMDSX} ---> $PIPPATH"
 else
-    echo -e "\tcommand ${CMDPX}pip${CMDSX} not found"
+    echo -e "\t${RED}command pip not found${NC}"
 fi
 if [ ! -z "$PIP3PATH" ]; then
     echo -e "\tfound command: ${CMDPX}pip3${CMDSX} ---> $PIP3PATH"
 else
-    echo -e "\tcommand ${CMDPX}pip3${CMDSX} not found"
+    echo -e "\t${RED}command pip3 not found${NC}"
 fi
 
 echo -e "$PREFX Bye"
