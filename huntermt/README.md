@@ -44,6 +44,13 @@ sudo apt -y install gnupg              # Docker prerequisite
 sudo apt -y install ca-certificates    #
 sudo apt -y install lsb-release        #
 
+echo "********** installing helper scripts **********"
+curl https://raw.githubusercontent.com/HunterCSIT/server-docs/main/scripts/scriptupdater.sh > /usr/local/bin/scriptupdater
+chown root:root /usr/local/bin/scriptupdater
+chmod 700 /usr/local/bin/scriptupdater
+# run script updater command
+scriptupdater
+echo 'echo -e "\nrun command \e[1;44m\e[1;37m pyhelp \e[0m to view Python environment\n"' >> /etc/bash.bashrc
 
 # echo "********** installing Google Chrome **********"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
