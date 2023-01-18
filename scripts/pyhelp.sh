@@ -7,8 +7,6 @@
 # https://github.com/HunterCSIT/server-docs/blob/main/scripts/pyhelp.sh
 
 RED='\033[0;31m'
-YELLOW='\e[1;45m\033[0;33m'
-
 NC='\033[0m' # No Color
 
 PREFX="\e[1;30m\e[1;43mpyhelp:\e[0m"
