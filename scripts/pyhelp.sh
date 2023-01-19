@@ -96,6 +96,6 @@ else
     echo -e "$PREFX ${RED}command pip3 not found${NC}"
 fi
 
-echo -e "\n$PREFX
+echo -e "\n$PREFX"
 echo -e "$PREFX Need help? Email cstechsp@hunter.cuny.edu"
 echo -e "$PREFX Bye"
