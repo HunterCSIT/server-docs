@@ -26,12 +26,12 @@ echo -e "$PREFX Hello"
 
 
 if [ ! -z "$PY2INTERPRETER" ]; then
-    echo -e "\n$PREFX *** *** *** ${BOLD}Python 2${NC} *** *** ***"
+    echo -e "\n$PREFX ${BOLD}Python 2${NC}"
     echo -e "$PREFX found command: ${CMDPX}python2${CMDSX} ---> ${BOLD}$PY2INTERPRETER${NC}"
     echo -e "$PREFX ${RED}NOTE: Python2 is old, please use python3${NC}"
 fi
 
-echo -e "\n$PREFX *** *** *** ${BOLD}Python 3${NC} *** *** ***"
+echo -e "\n$PREFX ${BOLD}Python 3${NC}"
 # Python3 interpreter
 if [ -z "$PY3INTERPRETER" ]; then
     echo -e "$PREFX ${RED}no python3 interpreter found${NC}"
@@ -55,7 +55,7 @@ else
     fi
 
     # Anaconda instructions
-    echo -e "\n$PREFX *** *** *** ${BOLD}Anaconda${NC} *** *** ***"
+    echo -e "\n$PREFX ${BOLD}Anaconda${NC}"
     if [ -d "/opt/anaconda3" ]; then
         if [ ! -z "$CONDAINTERPRETER" ]; then
             echo -e "$PREFX found command: ${CMDPX}conda${CMDSX} ---> ${BOLD}$CONDAINTERPRETER${NC}"
@@ -72,17 +72,17 @@ else
 
     # VENV instructions
     if [[ ! "$PY3INTERPRETER" == "/usr/bin"* ]] && [[ ! "$PY3INTERPRETER" == *"conda"* ]]; then
-        echo -e "\n$PREFX *** *** *** ${BOLD}venv${NC} *** *** ***"
+        echo -e "\n$PREFX ${BOLD}venv${NC}"
         echo -e "$PREFX to exit your environment: ${CMDPX}deactivate${CMDSX}"
     elif [[ ! "$PY3INTERPRETER" == *"conda"* ]]; then
-        echo -e "\n$PREFX *** *** *** ${BOLD}venv${NC} *** *** ***"
+        echo -e "\n$PREFX ${BOLD}venv${NC}"
         echo -e "$PREFX to create a new venv run command: ${CMDPX}python3 -m venv PROJECT_NAME_GOES_HERE${CMDSX}"
         echo -e "$PREFX to start your venv run command: ${CMDPX}source PROJECT_NAME_GOES_HERE/bin/activate${CMDSX}"
     fi
 fi
 
 # pip instructions
-echo -e "\n$PREFX *** *** *** ${BOLD}pip${NC} *** *** ***"
+echo -e "\n$PREFX ${BOLD}pip${NC}"
 PIPPATH=$(which pip)
 PIP3PATH=$(which pip3)
 if [ ! -z "$PIPPATH" ]; then
@@ -96,6 +96,6 @@ else
     echo -e "$PREFX ${RED}command pip3 not found${NC}"
 fi
 
-echo -e "\n$PREFX *** *** *** *** *** *** ***"
+echo -e "\n$PREFX
 echo -e "$PREFX Need help? Email cstechsp@hunter.cuny.edu"
 echo -e "$PREFX Bye"
